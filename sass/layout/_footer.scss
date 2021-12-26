@@ -1,0 +1,97 @@
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-hero);
+
+  .bottom {
+    @include displayfunc(flex, null, null, null, left);
+    align-items: baseline;
+  }
+
+  .mail,
+  .phone,
+  .city {
+    @include fontstyles(null, 400, 14px, 1.7, null);
+    font-style: normal;
+    display: block;
+  }
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bottom {
+  .logo {
+    display: flex;
+    &__down {
+      color: var(--accent-color);
+    }
+    &__footer {
+      color: var(--accent-text-color);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.connect {
+  margin-left: 70px;
+}
+
+.title__connect,
+.title__online {
+  @include fontstyles(var(--accent-color), 700, 14px, 1.2, 0.03em);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-social__item {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  @include displayfunc(flex, center, center, null, null);
+  border-radius: 50%;
+  transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--footer-social-link-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+
+  &:hover .footer-social__icon,
+  &:focus .footer-social__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.footer-social {
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.footer-social__icon {
+  fill: var(--accent-color);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address .link {
+  color: var(--address-color);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}

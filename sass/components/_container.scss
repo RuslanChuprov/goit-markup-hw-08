@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+.section {
+  .images {
+    display: block;
+  }
+
+  .customers-title,
+  .images,
+  .list-team {
+    @include fontstyles(var(--title-text-color), 700, 36px, 1.16, 0.03em);
+    text-align: center;
+  }
+
+  .list-team {
+    margin-bottom: 50px;
+  }
+}

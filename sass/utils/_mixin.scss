@@ -1,0 +1,15 @@
+@mixin fontstyles($col, $fw, $fs, $lh, $ls) {
+  color: $col;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin displayfunc($display, $ait, $jcon, $fwrap, $tal) {
+  display: $display;
+  align-items: $ait;
+  justify-content: $jcon;
+  flex-wrap: $fwrap;
+  text-align: $tal;
+}

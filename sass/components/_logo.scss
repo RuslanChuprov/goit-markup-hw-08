@@ -1,0 +1,5 @@
+.logo {
+  @include fontstyles(var(--accent-text-color), 700, 26px, 1.2, null);
+  font-family: Raleway, sans-serif;
+  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}

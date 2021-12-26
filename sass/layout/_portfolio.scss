@@ -1,0 +1,100 @@
+.signature {
+  background-color: var(--accent-color);
+  padding: 30px;
+}
+
+.title__description {
+  margin-bottom: 10px;
+  text-align: left;
+  @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--title-text-color);
+  letter-spacing: 0.06em;
+}
+
+.title__team {
+  @include fontstyles(var(--title-text-color), 500, 16px, 1.2, null);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section__content {
+  text-align: left;
+  @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
+}
+
+.profession {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team {
+  background-color: var(--background-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.portfolio {
+  padding: 94px 0;
+  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__btns {
+  @include displayfunc(flex, center, center, null, null);
+  margin-bottom: 50px;
+  .current {
+    background-color: var(--accent-text-color);
+    color: var(--accent-color);
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
+}
+
+.btns__list {
+  &:first-child {
+    margin-left: 0;
+  }
+  margin-left: 8px;
+  transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0;
+  background-color: var(--background-color);
+  @include fontstyles(var(--title-text-color), 500, 16px, 1.6, null);
+  cursor: pointer;
+  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-text-color);
+    color: var(--accent-color);
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
+}
+
+.title {
+  .sites {
+    @include fontstyles(null, 700, 18px, 2, 0.06em);
+    margin-bottom: 4px;
+  }
+}
+
+.description-photo {
+  padding: 20px 24px;
+  border: 1px solid var(--header-border);
+  border-top: 0;
+}
+
+.section {
+  .content {
+    @include fontstyles(var(--primary-text-color), null, 16px, 1.87, null);
+  }
+}

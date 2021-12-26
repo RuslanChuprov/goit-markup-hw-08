@@ -1,0 +1,27 @@
+.property {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.differences {
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+    width: 270px;
+  }
+
+  &__item {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.property__item {
+  @include displayfunc(flex, center, center, null, null);
+  background-color: var(--background-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
