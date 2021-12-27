@@ -23,6 +23,7 @@
 
 .modal-form {
   display: block;
+  justify-content: center;
   padding-top: 30px;
 
   &__field {
@@ -96,13 +97,8 @@
 }
 
 .icon-close {
+  fill: var(--title-text-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close__button-link {
-  &:hover .icon-close {
-    fill: var(--accent-text-color);
-  }
 }
 
 .modal-close__button {
@@ -115,11 +111,15 @@
   border-radius: 50%;
   border: 1px solid var(--address-color);
   @include displayfunc(flex, center, center, null, null);
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    fill: var(--accent-text-color);
+    .icon-close {
+      fill: var(--accent-text-color);
+      border-color: var(--accent-color);
+    }
   }
 }
 
@@ -140,10 +140,16 @@
   height: 50px;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
-    background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
 }
 
 .check-wrap {

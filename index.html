@@ -216,13 +216,28 @@
             </div>
           </li>
 
-          <li class="employees__item">            
+          <li class="employees__item">  
+            <picture>
+              <source 
+                srcset="
+                ./images/dev-team/repina.jpg 1x, 
+                ./images/dev-team/repina-2x.jpg 2x" 
+                media="(min-width:1200px)">
+              <source 
+                srcset="
+                ./images/dev-team/repina-tab.jpg 1x, 
+                ./images/dev-team/repina-tab-2x.jpg 2x" 
+                media="(min-width:768px)">
+              <source 
+                srcset="
+                ./images/dev-team/repina-mob.jpg 1x, 
+                ./images/dev-team/repina-mob-2x.jpg 2x"
+                 media="(min-width:320px)">
               <img 
-              srcset="./images/dev-team/repina.jpg 1x"
-                src="./images/dev-team/repina.jpg" 
-                width="100%"   
-                alt="Фото Репина"
-              >
+                src="./images/dev-team/repina.jpg"  
+                alt="Фото Репина">
+            </picture>
+              
             <div class="signature">
               <h3 class="title__team">Ольга Репина</h3>
               <p lang="en" class="section__content profession">Frontend Developer</p>
@@ -483,11 +498,9 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close__button" data-modal-close>
-        <a href="" class="modal-close__button-link">
           <svg class="icon-close" width="30" height="30">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </a>
       </button>
       <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
