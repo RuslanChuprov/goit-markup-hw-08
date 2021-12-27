@@ -3,12 +3,12 @@
   padding: 30px;
 }
 
-.title__description {
-  margin-bottom: 10px;
-  text-align: left;
-  @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
-  text-transform: uppercase;
-}
+// .title__description {
+//   margin-bottom: 10px;
+//   text-align: left;
+//   @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
+//   text-transform: uppercase;
+// }
 
 .title {
   color: var(--title-text-color);

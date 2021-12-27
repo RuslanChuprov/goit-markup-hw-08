@@ -1,3 +1,10 @@
 .title {
   @include fontstyles(var(--title-text-color), 700, 18px, 2, 0.06em);
 }
+
+.title__description {
+  margin-bottom: 10px;
+  text-align: left;
+  @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
+  text-transform: uppercase;
+}
