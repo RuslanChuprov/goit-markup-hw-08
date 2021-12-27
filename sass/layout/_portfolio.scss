@@ -3,13 +3,6 @@
   padding: 30px;
 }
 
-// .title__description {
-//   margin-bottom: 10px;
-//   text-align: left;
-//   @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
-//   text-transform: uppercase;
-// }
-
 .title {
   color: var(--title-text-color);
   letter-spacing: 0.06em;
@@ -29,12 +22,6 @@
 .profession {
   text-align: center;
   margin-bottom: 16px;
-}
-
-.team {
-  background-color: var(--background-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .portfolio {
