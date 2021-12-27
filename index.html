@@ -153,8 +153,30 @@
         <h2 class="title__dev-team "> Наша команда</h2>
         <ul class="employees__list list">
 
-          <li class="employees__item">            
-              <img src="./images/dev-team/demyanenco.jpg" width="270" alt="Фото Демьяненко">
+          <li class="employees__item">   
+              <picture>
+                <source
+                  srcset="
+                  ./images/dev-team/demyanenco.jpg 1x, 
+                  ./images/dev-team/demyanenco-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                >
+                <source 
+                  srcset="
+                  ./images/dev-team/demyanenco-tab.png 1x, 
+                  ./images/dev-team/demyanenco-tab-2x.jpg 2x" 
+                  media="(min-width:768px)"
+                >
+                <source srcset="
+                  ./images/dev-team/demyanenco-mob.png 1x, 
+                  ./images/dev-team/demyanenco-mob-2x.jpg 2x" 
+                  media="(min-width:320px)"
+                >
+                <img 
+                  src="./images/dev-team/demyanenco.jpg" 
+                  alt="Фото Демьяненко">
+              </picture>         
+
             <div class="signature">
 
               <h3 class="title__team">Игорь Демьяненко</h3>
@@ -195,7 +217,12 @@
           </li>
 
           <li class="employees__item">            
-              <img src="./images/dev-team/repina.jpg" width="270" alt="Фото Репина">
+              <img 
+              srcset="./images/dev-team/repina.jpg 1x"
+                src="./images/dev-team/repina.jpg" 
+                width="100%"   
+                alt="Фото Репина"
+              >
             <div class="signature">
               <h3 class="title__team">Ольга Репина</h3>
               <p lang="en" class="section__content profession">Frontend Developer</p>
@@ -233,7 +260,12 @@
           </li>
 
           <li class="employees__item">            
-              <img src="./images/dev-team/tarasov.jpg" width="270" alt="Фото Тарасов">
+              <img 
+                srcset="./images/dev-team/tarasov.jpg 1x"
+                src="./images/dev-team/tarasov.jpg" 
+                width="100%"   
+                alt="Фото Тарасов"
+              >
             <div class="signature">
               <h3 class="title__team">Николай Тарасов</h3>
               <p lang="en" class="section__content profession">Marketing</p>
@@ -271,7 +303,12 @@
           </li>
 
           <li class="employees__item">            
-              <img src="./images/dev-team/ermakov.jpg" width="270" alt="Фото Ермаков">
+              <img 
+              srcset="./images/dev-team/ermakov.jpg 1x"
+                src="./images/dev-team/ermakov.jpg" 
+                width="100%"
+                alt="Фото Ермаков"
+              >
             <div class="signature">
               <h3 class="title__team">Михаил Ермаков</h3>
               <p lang="en" class="section__content profession">UI Designer</p>
