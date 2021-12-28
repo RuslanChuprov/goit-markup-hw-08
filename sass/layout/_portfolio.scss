@@ -19,16 +19,6 @@
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
 }
 
-.profession {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.portfolio {
-  padding: 94px 0;
-  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .portfolio__btns {
   @include displayfunc(flex, center, center, null, null);
   margin-bottom: 50px;
@@ -84,4 +74,9 @@
   .content {
     @include fontstyles(var(--primary-text-color), null, 16px, 1.87, null);
   }
+}
+
+.profession {
+  text-align: center;
+  margin-bottom: 16px;
 }

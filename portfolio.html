@@ -13,7 +13,7 @@
 </head>
 <body class="page">
   <!-- Шапка портфолио ------->
-  <header class="header">
+  <!-- <header class="header">
     <div class="container logo__head">
       <a href="./index.html" class="logo link logo__header"
       >Web<span lang="en" class="logo__top">Studio</span>
@@ -43,28 +43,49 @@
         </li>
       </ul>
     </div>
-  </header>
+  </header> -->
 
   <main>
     
   <!--Кнопки-->
   <section class="section portfolio">
     <div class="container">
-      <h1 class="visually-hidden">Portfolio</h1>
+      <!-- <h1 class="visually-hidden">Portfolio</h1>
       <ul class="portfolio__btns list">
         <li class="btns__list"><button type="button" class="portfolio__button current">Все</button></li>
         <li class="btns__list"><button type="button" class="portfolio__button">Веб-сайты</button></li>
         <li class="btns__list"><button type="button" class="portfolio__button">Приложения</button></li>
         <li class="btns__list"><button type="button" class="portfolio__button">Дизайн</button></li>
         <li class="btns__list"><button type="button" class="portfolio__button">Маркетинг</button></li>
-      </ul>  
+      </ul>   -->
 
   <!--Макеты проектов-->
-      <ul class="projects list">
-        <li class="item">
+      <ul class="projects__list list">
+
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap"> 
-              <img src="./images/technocrash.jpg" alt="Фото ноутбука" width="370" height="294">
+              <picture>
+                <source 
+                  srcset="
+                  ./images/cards/technocrash.jpg 1x, 
+                  ./images/cards/technocrash-2x.jpg 2x" 
+                  media="(min-width:1200px)">
+                <source 
+                  srcset="
+                  ./images/cards/technocrash-tab.jpg 1x, 
+                  ./images/cards/technocrash-tab-2x.jpg 2x" 
+                  media="(min-width:768px)">
+                <source 
+                  srcset="
+                  ./images/cards/technocrash-mob.jpg 1x, 
+                  ./images/cards/technocrash-mob-2x.jpg 2x" 
+                  media="(min-width:320px)">
+                <img 
+                  src="./images/cards/technocrash.jpg" 
+                  alt="Фото ноутбука">
+              </picture>
+
               <p class="project__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
               шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -75,7 +96,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/basketball.jpg" alt="Фото баскетболистов" width="370" height="294">
@@ -89,7 +110,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/seafood.jpg" alt="Фото рыбы" width="370" height="294">
@@ -103,7 +124,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/speakerphone.jpg" alt="Фото Наушники" width="370" height="294">
@@ -117,7 +138,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">        
               <img src="./images/boxes.jpg" alt="Фото Коробки" width="370" height="294">
@@ -131,7 +152,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/display.jpg" alt="Фото Дисплей" width="370" height="294">
@@ -145,7 +166,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/book.jpg" alt="Фото Книга" width="370" height="294">
@@ -159,7 +180,7 @@
           </a>
         </li>
 
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/trincket.jpg" alt="Фото брелок" width="370" height="294">
@@ -173,7 +194,7 @@
           </a>
         </li>
         
-        <li class="item">
+        <li class="projects__item">
           <a href="" class="project__wrap link">
             <div class="project__item-wrap">
               <img src="./images/desktop.jpg" alt="Фото компьютер" width="370" height="294">
@@ -192,7 +213,7 @@
   </main>
 
   <!--------- Подвал-->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container bottom">
         <div class="address-box">
           <a href="./index.html" class="logo link logo__footer">Web<span class="logo__down logo link">Studio</span></a>
@@ -262,7 +283,7 @@
             </section>
 
     </div>
-  </footer>  
+  </footer>   -->
 </body>
 </html>
 

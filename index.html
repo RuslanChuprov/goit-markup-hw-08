@@ -274,13 +274,28 @@
             </div>
           </li>
 
-          <li class="employees__item">            
-              <img 
-                srcset="./images/dev-team/tarasov.jpg 1x"
-                src="./images/dev-team/tarasov.jpg" 
-                width="100%"   
-                alt="Фото Тарасов"
-              >
+          <li class="employees__item">   
+              <picture>
+                <source 
+                  srcset="
+                  ./images/dev-team/tarasov.jpg 1x, 
+                  ./images/dev-team/tarasov-2x.jpg 2x" 
+                  media="(min-width:1200px)">
+                <source 
+                  srcset="
+                  ./images/dev-team/tarasov-tab.jpg 1x, 
+                  ./images/dev-team/tarasov-tab-2x.jpg 2x" 
+                  media="(min-width:768px)">
+                <source 
+                  srcset="
+                  ./images/dev-team/tarasov-mob.jpg 1x, 
+                  ./images/dev-team/tarasov-mob-2x.jpg 2x" 
+                  media="(min-width:320px)">
+                <img 
+                  src="./images/dev-team/tarasov.jpg" 
+                  alt="Фото Тарасов">
+              </picture>
+              
             <div class="signature">
               <h3 class="title__team">Николай Тарасов</h3>
               <p lang="en" class="section__content profession">Marketing</p>
@@ -317,13 +332,28 @@
             </div>
           </li>
 
-          <li class="employees__item">            
+          <li class="employees__item">  
+            <picture>
+              <source 
+                srcset="
+                ./images/dev-team/ermakov.jpg 1x, 
+                ./images/dev-team/ermakov-2x.jpg 2x" 
+                media="(min-width:1200px)">
+              <source 
+                srcset="
+                ./images/dev-team/ermakov-tab.jpg 1x, 
+                ./images/dev-team/ermakov-tab-2x.jpg 2x" 
+                media="(min-width:768px)">
+              <source 
+                srcset="
+                ./images/dev-team/ermakov-mob.jpg 1x, 
+                ./images/dev-team/ermakov-mob-2x.jpg 2x" 
+                media="(min-width:320px)">
               <img 
-              srcset="./images/dev-team/ermakov.jpg 1x"
                 src="./images/dev-team/ermakov.jpg" 
-                width="100%"
-                alt="Фото Ермаков"
-              >
+                alt="Фото Ермаков">
+            </picture>
+              
             <div class="signature">
               <h3 class="title__team">Михаил Ермаков</h3>
               <p lang="en" class="section__content profession">UI Designer</p>
