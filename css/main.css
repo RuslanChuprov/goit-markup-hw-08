@@ -64,7 +64,6 @@ h6 {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -679,6 +678,7 @@ img {
 .project__item-wrap {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .project__top-text {
