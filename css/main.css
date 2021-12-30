@@ -697,16 +697,23 @@ img {
 }
 
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-hero);
 }
 
-.footer .bottom {
-  display: flex;
-  text-align: left;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .bottom {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .footer .mail,
@@ -872,25 +879,36 @@ img {
   letter-spacing: 0.03em;
 }
 
-.portfolio__btns {
+.btns__list {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
-.portfolio__btns .current {
+.btns__list .current {
   background-color: var(--accent-text-color);
   color: var(--accent-color);
   box-shadow: 0 4px 4px 0 var(--button-shadow);
 }
 
-.btns__list {
+@media screen and (min-width: 1200px) {
+  .btns__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+}
+
+.btns__item {
   margin-left: 8px;
   transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btns__list:first-child {
+.btns__item:first-child {
   margin-left: 0;
 }
 

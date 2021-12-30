@@ -19,22 +19,30 @@
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
 }
 
-.portfolio__btns {
-  @include displayfunc(flex, center, center, null, null);
-  margin-bottom: 50px;
-  .current {
-    background-color: var(--accent-text-color);
-    color: var(--accent-color);
-    box-shadow: 0 4px 4px 0 var(--button-shadow);
+.btns {
+  &__list {
+    @include displayfunc(flex, left, center, wrap, null);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .current {
+      background-color: var(--accent-text-color);
+      color: var(--accent-color);
+      box-shadow: 0 4px 4px 0 var(--button-shadow);
+    }
+    @media screen and (min-width: 1200px) {
+      @include displayfunc(flex, center, center, null, null);
+      margin-bottom: 34px;
+    }
   }
-}
 
-.btns__list {
-  &:first-child {
-    margin-left: 0;
+  &__item {
+    &:first-child {
+      margin-left: 0;
+    }
+    margin-left: 8px;
+    transition: background-color var(--time-duration)
+      cubic-bezier(0.4, 0, 0.2, 1);
   }
-  margin-left: 8px;
-  transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__button {

@@ -1,12 +1,15 @@
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-hero);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   .bottom {
-    @include displayfunc(flex, null, null, null, left);
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      @include displayfunc(flex, baseline, null, null, left);
+    }
   }
 
   .mail,
