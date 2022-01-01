@@ -709,16 +709,16 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .bottom {
+  .bottom {
     display: flex;
     align-items: baseline;
     text-align: left;
   }
 }
 
-.footer .mail,
-.footer .phone,
-.footer .city {
+.bottom .mail,
+.bottom .phone,
+.bottom .city {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -824,6 +824,21 @@ img {
 .footer-social__icon {
   fill: var(--accent-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__top {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .online {

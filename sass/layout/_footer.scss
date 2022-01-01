@@ -5,11 +5,11 @@
   @media screen and (min-width: 1200px) {
     display: flex;
   }
+}
 
-  .bottom {
-    @media screen and (min-width: 1200px) {
-      @include displayfunc(flex, baseline, null, null, left);
-    }
+.bottom {
+  @media screen and (min-width: 1200px) {
+    @include displayfunc(flex, baseline, null, null, left);
   }
 
   .mail,
@@ -111,4 +111,14 @@
 .footer-social__icon {
   fill: var(--accent-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__top {
+  @media screen and (min-width: 768px) {
+    @include displayfunc(flex, null, null, null, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include displayfunc(flex, center, center, nowrap, null);
+  }
 }
