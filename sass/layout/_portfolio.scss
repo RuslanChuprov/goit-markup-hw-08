@@ -21,9 +21,10 @@
 
 .btns {
   &__list {
-    @include displayfunc(flex, left, center, wrap, null);
+    @include displayfunc(flex, center, flex-start, wrap, null);
     margin-top: 60px;
     margin-bottom: 40px;
+    margin-right: auto;
     .current {
       background-color: var(--accent-text-color);
       color: var(--accent-color);
@@ -40,6 +41,7 @@
       margin-left: 0;
     }
     margin-left: 8px;
+    margin-bottom: 15px;
     transition: background-color var(--time-duration)
       cubic-bezier(0.4, 0, 0.2, 1);
   }
