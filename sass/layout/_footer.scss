@@ -115,7 +115,7 @@
 
 .footer__top {
   @media screen and (min-width: 768px) {
-    @include displayfunc(flex, null, null, null, null);
+    @include displayfunc(flex, null, space-between, null, null);
   }
 
   @media screen and (min-width: 1200px) {

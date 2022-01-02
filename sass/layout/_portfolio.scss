@@ -30,6 +30,10 @@
       color: var(--accent-color);
       box-shadow: 0 4px 4px 0 var(--button-shadow);
     }
+    @media screen and (min-width: 768px) {
+      @include displayfunc(flex, center, center, null, null);
+      margin-bottom: 14px;
+    }
     @media screen and (min-width: 1200px) {
       @include displayfunc(flex, center, center, null, null);
       margin-bottom: 34px;
