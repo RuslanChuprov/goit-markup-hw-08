@@ -333,6 +333,12 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
@@ -372,6 +378,12 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
 .auth-nav__item + .auth-nav__item {
   margin-left: 50px;
 }
@@ -404,6 +416,23 @@ img {
   fill: currentColor;
   margin-right: 10px;
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu__button-icon {
+  display: none;
+  fill: var(--title-text-color);
+}
+
+.mob-menu__open-button {
+  display: none;
+}
+
+.mob-menu__list {
+  display: none;
+}
+
+.mob-menu__close__button {
+  display: none;
 }
 
 .hero {

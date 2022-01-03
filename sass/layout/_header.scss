@@ -35,6 +35,9 @@
 }
 
 .site-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   @include fontstyles(var(--title-text-color), 500, 14px, 1.2, 0.02em);
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,6 +85,9 @@
 
 /* -------------auth-nav ----------- */
 .auth-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   margin-left: auto;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,4 +129,27 @@
   fill: currentColor;
   margin-right: 10px;
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu {
+  &__button-icon {
+    display: none;
+    fill: var(--title-text-color);
+  }
+
+  &__open-button {
+    display: none;
+    @media screen and (max-width: 768px) {
+    }
+  }
+
+  &__list {
+    display: none;
+    @media screen and (max-width: 768px) {
+    }
+  }
+
+  &__close__button {
+    display: none;
+  }
 }
