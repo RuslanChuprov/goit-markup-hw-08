@@ -183,11 +183,11 @@
   &__list {
     @media screen and (max-width: 767px) {
       position: fixed;
-      top: 200;
+      top: 350px;
       width: 100vw;
       height: 100vh;
       background-color: var(--accent-color);
-      @include fontstyles(var(--title-text-color), 500, 40px, 1.17, 0.02em);
+
       transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
       padding-left: 40px;
       padding-top: 48px;
@@ -195,15 +195,23 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+  }
 
-    &__item {
-      margin-bottom: 32px;
-      &:hover,
-      &:focus,
-      &.current {
-        color: var(--accent-text-color);
-      }
+  &__item {
+    margin-bottom: 32px;
+    &:hover,
+    &:focus,
+    &.current {
+      color: var(--accent-text-color);
     }
+  }
+
+  &__first-mail {
+    @include fontstyles(var(--title-text-color), 500, 34px, 1.17, 0.02em);
+  }
+
+  &__phone {
+    @include fontstyles(var(--title-text-color), 500, 24px, 1.17, 0.02em);
   }
 }
 
