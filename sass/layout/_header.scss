@@ -216,6 +216,9 @@
 }
 
 .menu-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
   @media screen and (min-width: 768px) {
     display: none;
   }
