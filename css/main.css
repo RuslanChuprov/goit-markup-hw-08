@@ -435,8 +435,21 @@ img {
   transform: translateX(0);
 }
 
-.mobile-menu__list {
-  display: none;
+@media screen and (max-width: 767px) {
+  .mobile-menu__list {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {

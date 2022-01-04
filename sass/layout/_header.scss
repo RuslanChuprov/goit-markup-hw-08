@@ -141,6 +141,7 @@
   height: 100vh;
   padding: 0;
   z-index: 10;
+  background-color: var(--accent-color);
 
   transform: translateX(100%);
   transition: transform var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -152,8 +153,13 @@
 
 .mobile-menu {
   &__list {
-    display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
+      background-color: var(--accent-color);
+      @include fontstyles(var(--title-text-color), 500, 14px, 1.2, 0.02em);
+      transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
 }
