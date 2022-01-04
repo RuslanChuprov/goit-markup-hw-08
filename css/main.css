@@ -420,7 +420,7 @@ img {
 
 /* ----      Mobile menu ----------*/
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -438,6 +438,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu__list {
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-color: var(--accent-color);
