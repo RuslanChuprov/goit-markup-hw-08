@@ -420,7 +420,7 @@ img {
 
 /* ----      Mobile menu ----------*/
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -428,7 +428,7 @@ img {
   padding: 0;
   z-index: 10;
   background-color: var(--accent-color);
-  transform: translateX(150%);
+  transform: translateX(200%);
   transition: transform var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -438,6 +438,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu__list {
+    width: 100vw;
+    height: 100vh;
     background-color: var(--accent-color);
     color: var(--title-text-color);
     font-weight: 500;
