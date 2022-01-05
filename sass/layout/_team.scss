@@ -22,10 +22,10 @@
 
 .employees {
   &__list {
-    width: 100%;
+    // width: 100%;
     margin-bottom: -30px;
     margin-right: -30px;
-    @include displayfunc(flex, null, center, wrap, null);
+    @include displayfunc(flex, null, null, wrap, null);
   }
 
   &__item {
@@ -33,7 +33,7 @@
     margin-right: 30px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 var(--button-shadow);
-    overflow: hidden;
+    // overflow: hidden;
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
     }
