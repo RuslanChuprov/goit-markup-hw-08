@@ -199,6 +199,9 @@
       top: 0;
       width: 100vw;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       background-color: var(--accent-color);
       @include fontstyles(var(--title-text-color), 500, 40px, 1.17, 0.02em);
       transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -225,6 +228,9 @@
   &__list {
     @media screen and (max-width: 767px) {
       position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       top: 350px;
       width: 100vw;
       height: 100vh;

@@ -489,6 +489,9 @@ img {
     top: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     background-color: var(--accent-color);
     color: var(--title-text-color);
     font-weight: 500;
@@ -519,6 +522,9 @@ img {
 @media screen and (max-width: 767px) {
   .mob-contact__list {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     top: 350px;
     width: 100vw;
     height: 100vh;
