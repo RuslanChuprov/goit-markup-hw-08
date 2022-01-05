@@ -15,8 +15,8 @@
 .projects {
   &__list {
     width: 100%;
-    margin-bottom: -30px;
-    margin-right: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
     @include displayfunc(flex, null, null, wrap, null);
     padding-left: 0;
     padding-right: 0;
@@ -24,17 +24,19 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    height: 440px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    // height: 440px;
+    margin-top: 30px;
+    margin-left: 30px;
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
-      height: 404px;
+      // height: 404px;
     }
     @media screen and (min-width: 1200px) {
       width: calc(100% / 3 - 30px);
-      height: 440px;
+      // height: 440px;
     }
     transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,7 +63,7 @@
 .project__item-wrap {
   position: relative;
   overflow: hidden;
-  height: 294px;
+  // height: 294px;
 }
 
 .project__top-text {

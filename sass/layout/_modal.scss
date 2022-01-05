@@ -118,7 +118,7 @@
   &:focus {
     .icon-close {
       fill: var(--accent-text-color);
-      border-color: var(--accent-color);
+      border-color: var(--input-form-border);
     }
   }
 }
@@ -158,7 +158,7 @@
 
 .modal-check__text {
   display: block;
-  @include displayfunc(flex, center, null, null, null);
+  @include displayfunc(flex, center, center, null, null);
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
 
   span {

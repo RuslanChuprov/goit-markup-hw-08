@@ -22,7 +22,7 @@
 .btns {
   &__list {
     @include displayfunc(flex, center, flex-start, wrap, null);
-    margin-top: 60px;
+    // margin-top: 60px;
     margin-bottom: 40px;
     margin-right: auto;
     .current {
@@ -45,7 +45,10 @@
       margin-left: 0;
     }
     margin-left: 8px;
-    margin-bottom: 15px;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 15px;
+    }
+    // margin-bottom: 15px;
     transition: background-color var(--time-duration)
       cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -75,10 +78,14 @@
   .sites {
     @include fontstyles(null, 700, 18px, 2, 0.06em);
     margin-bottom: 4px;
+    // flex-grow: 1;
   }
 }
 
 .description-photo {
+  // display: flex;
+  // flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--header-border);
   border-top: 0;
