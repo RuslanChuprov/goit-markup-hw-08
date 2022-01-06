@@ -168,6 +168,14 @@
     margin-right: 5px;
     border-radius: 2px;
     @include displayfunc(flex, center, center, null, null);
+    transition: border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      border-color: var(--accent-text-color);
+    }
   }
 }
 

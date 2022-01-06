@@ -123,12 +123,13 @@
 
   &__phone {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      // margin-left: auto;
+      display: block;
     }
   }
   &__first-mail {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
+      display: block;
       margin-left: auto;
     }
   }
