@@ -22,7 +22,6 @@
 .btns {
   &__list {
     @include displayfunc(flex, center, flex-start, wrap, null);
-    // margin-top: 60px;
     margin-bottom: 40px;
     margin-right: auto;
     .current {
@@ -32,6 +31,7 @@
     }
     @media screen and (min-width: 768px) {
       @include displayfunc(flex, center, center, null, null);
+      margin-top: 60px;
       margin-bottom: 14px;
     }
     @media screen and (min-width: 1200px) {
